@@ -17,6 +17,7 @@ The function “Car” returns the first atom of a list.
 
 Example:
 (car '(a b c))    ; 'a
+
 (car '((a b c) x y z))    ; '(a b c)
 
 
@@ -25,8 +26,11 @@ The “Cdr” of a list is the rest of the list after the first item in the list
 
 Example:
 (cdr '(a b c))    ; '(b c)
+
 (cdr '((a b c) x y z))    ; '(x y z)
+
 (cdr '(hamburger))    ; '()
+
 (cdr '((x) t r))    ; '(t r)
 
 
@@ -36,12 +40,16 @@ The “Cons” function concatenates lists into one.
 Example:
 (cons 'peanut '(butter and jelly))
 ; '(peanut butter and jelly)
+
 (cons '(banana and) '(peanut butter and jelly))
 ; '((banana and) peanut butter and jelly)
+
 (cons '((help) this) '(is very ((hard) to learn)))
 ; '(((help) this) is very ((hard) to learn))
+
 (cons '(a b (c)) '())
 ; '((a b (c)))
+
 (cons 'a '())
 ; '(a)
 
@@ -51,6 +59,7 @@ The “null?” function checks if the list is empty and returns either True of 
 
 Example:
 (null? '())     ; true
+
 (null? '(a b c))    ; false
 
 
@@ -59,6 +68,7 @@ The “eq?” function takes two arguments, each must be a non-numeric atom.
 
 Example:
 (eq? 'Harry 'Harry)     ; true
+
 (eq? 'margarine 'butter)    ; false
 
 ## Multi user dungeon game
